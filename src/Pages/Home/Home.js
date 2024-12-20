@@ -5,7 +5,7 @@ import Header from '../../components/Header/Header';
 import Contos from "./Contos";
 import Carousel from "./Carrossel";
 import Contador from "./Contador";
-import { HighlightedName, Title, ButtonCircle, ContainerSection, ButtonClose } from "./HomeStyle";
+import { HighlightedName, Title, Subtitle, ButtonCircle, ContainerSection, ButtonClose } from "./HomeStyle";
 import { Link } from "react-router-dom";
 import { ChildNameContext } from "./Contexts/ChildNameContext";
 
@@ -19,9 +19,9 @@ export default function Home({ }) {
         localStorage.removeItem("childName");
         setChildName("");
         navigate("/"); // Redireciona para a tela de login
-      };
+    };
 
-      return (
+    return (
         <>
             <GlobalStyles />
             <Header />
@@ -35,7 +35,7 @@ export default function Home({ }) {
 
                 <div className="container">
                     <Title className="fw-bold mt-1 text-success">
-                        Olá, <HighlightedName>{childName}</HighlightedName>! 🎄 Que a magia do Natal te envolva!
+                        Olá, <HighlightedName>{childName} </HighlightedName>! 🎄 Que a magia do Natal te envolva!
                     </Title>
 
                     <p className="fs-4 text-secondary mt-3" style={{ color: "#f1faee" }}>
@@ -45,9 +45,9 @@ export default function Home({ }) {
                     <Carousel />
 
                     {/* Container com Contador e Botões */}
-                    <h3 className="text-success fw-bold mb-4 mt-5" style={{ fontSize: "3rem" }}>
+                    <Subtitle>
                         Escolha a sua aventura de Natal! 🎄
-                    </h3>
+                    </Subtitle>
 
                     <ContainerSection className="row align-items-center mt-5">
                         {/* Coluna do Contador */}

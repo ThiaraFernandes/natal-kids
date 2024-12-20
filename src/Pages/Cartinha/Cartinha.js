@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 import { jsPDF } from "jspdf";
-import {StyledTextarea, StyledButton} from './Cartinha.styled'
-
+import { StyledTextarea, StyledButton, StyledImage, StyledTitle } from './Cartinha.styled';
 
 export default function Cartinha() {
 
     const [cartinha, setCartinha] = useState('')
 
-    const handleChange= (e) =>{
+    const handleChange = (e) => {
         setCartinha(e.target.value);
     }
 
@@ -24,16 +23,14 @@ export default function Cartinha() {
         <div className="container mt-5">
             <div className="row align-items-center mb-4">
                 <div className="col-md-6 text-center text-md-start">
-                    <h1 className="text-success fw-bold">
+                    <StyledTitle>
                         Escreva sua Cartinha para o Papai Noel! 🎅
-                    </h1>
+                    </StyledTitle>
                 </div>
                 <div className="col-md-6 text-center">
-                    <img
+                    <StyledImage
                         src="/images/cartinha/papai-noel.jpg"
                         alt="Papai Noel lendo"
-                        className="img-fluid rounded-3 border border-danger shadow-lg transition-all duration-300 ease-in-out"
-                        style={{ maxWidth: '450px' }}
                     />
                 </div>
             </div>
@@ -53,7 +50,7 @@ export default function Cartinha() {
                 <div className="col-12 text-center mb-5">
                     <StyledButton
                         className="btn btn-success btn-lg shadow mb-4"
-                        onClick={handleSavePDF}  
+                        onClick={handleSavePDF}
                     >
                         ✉️ Enviar para o Papai Noel
                     </StyledButton>

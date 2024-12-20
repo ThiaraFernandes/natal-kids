@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from "react-router-dom";
-import { StyledContainer, QuestionText, StyledCard, ResultMessage, AnimatedCongrats } from './QuizStyles';
+import { StyledContainer, QuestionText, StyledCard, ResultMessage, AnimatedCongrats, IntroParagraph, IntroTitle, StyledButton } from './QuizStyles';
 import QuizData from './QuizData';
 
 export default function QuizInterativo() {
@@ -12,7 +12,6 @@ export default function QuizInterativo() {
     const [quizFinished, setQuizFinished] = useState(false);
     const [showIntro, setShowIntro] = useState(true);
     const navigate = useNavigate();
-
 
     // Verifique se há perguntas no array
     if (!QuizData || QuizData.length === 0) {
@@ -61,14 +60,14 @@ export default function QuizInterativo() {
             {/* Botão para voltar à página principal de jogos */}
             <div className="text-center mb-4">
                 <button
-                    className="btn btn-danger "
+                    className="btn btn-danger"
                     style={{ fontSize: "1.5rem", borderRadius: "5px", padding: "10px 20px" }}
                     onClick={() => navigate("/Jogos")}
                 >
                     Voltar para Jogos
                 </button>
             </div>
-    
+
             {quizFinished ? (
                 <>
                     <AnimatedCongrats>
@@ -84,17 +83,13 @@ export default function QuizInterativo() {
                 </>
             ) : showIntro ? (
                 <div>
-                    <h2 style={{fontSize: "4rem", marginTop: "30px", color:"  #228B22", fontWeight:"bold"}}>Bem-vindo ao Quiz de Natal! 🎅🎄</h2>
-                    <p style={{ fontSize: "2rem", marginBottom: "30px", color:"#f1faee",  }}>
+                    <IntroTitle>Bem-vindo ao Quiz de Natal! 🎅🎄</IntroTitle>
+                    <IntroParagraph>
                         Teste seus conhecimentos sobre o Natal e descubra o quanto você sabe sobre essa data mágica!
-                    </p>
-                    <button
-                        className="btn btn-success"
-                        style={{ fontSize: "2rem", padding: "15px 40px" }}
-                        onClick={() => setShowIntro(false)}
-                    >
+                    </IntroParagraph>
+                    <StyledButton onClick={() => setShowIntro(false)}>
                         Começar
-                    </button>
+                    </StyledButton>
                 </div>
             ) : (
                 <>
@@ -130,7 +125,7 @@ export default function QuizInterativo() {
                             </ResultMessage>
                             <button
                                 className="btn btn-success"
-                                style={{ fontSize: "1.8rem" }}
+                                style={{ fontSize: "1.8rem", padding: "12px 22px", marginTop: "10px" }}
                                 onClick={nextQuestion}
                             >
                                 Próxima Pergunta

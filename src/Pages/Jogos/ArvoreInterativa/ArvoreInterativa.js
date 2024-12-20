@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { OrnamentButton, TreeContainer, TreeSpot, SidebarContainer, ActionButtons } from './ArvoreStyle.js';
+import { OrnamentButton, TreeContainer, TreeSpot, SidebarContainer, ActionButtons, TreeTittle, TreeParagraph } from './ArvoreStyle.js';
 import { useNavigate } from "react-router-dom";
 
 export default function ArvoreInterativa() {
@@ -63,17 +63,18 @@ export default function ArvoreInterativa() {
 
     return (
         <div className="container mt-2" style={{ minHeight: "100vh", display: "flex", flexDirection: "column" }}>
-            <h1 className="text-success text-center" style={{ fontSize: "4rem" }}>Decore sua Árvore de Natal!</h1>
-            <p className="text-danger fs-2 text-center" style={{ fontFamily: "Arial, cursive" }}>
+            <TreeTittle className="text-success text-center">Decore sua Árvore de Natal!</TreeTittle>
+            <TreeParagraph className="text-danger text-center">
                 Tempo restante: {timeLeft}s | Pontos: {score}
-            </p>
+            </TreeParagraph>
 
             <div className="row">
                 {/* Barra lateral com enfeites */}
                 <div className="col-md-3">
                     <SidebarContainer>
                         <h4 className="text-success fs-1 text-center">Enfeites</h4>
-                        <div className="d-flex flex-column align-items-center">
+
+                        <div className="d-flex flex-wrap justify-content-center">
                             {ornaments.map((ornament, index) => (
                                 <OrnamentButton
                                     key={index}
@@ -131,7 +132,7 @@ export default function ArvoreInterativa() {
                         width: "300px",
                         boxShadow: "0 4px 10px rgba(0, 0, 0, 0.5)",
                         opacity: gameFinished ? 1 : 0,
-                        transition: "opacity 1s ease-out", 
+                        transition: "opacity 1s ease-out",
                     }}
                 >
                     <h2>Parabéns! Você completou a árvore! 🎉</h2>

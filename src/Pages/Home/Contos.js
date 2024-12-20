@@ -1,5 +1,6 @@
 
 import React, { useState } from "react";
+import{ContosTitle} from "./HomeStyle"
 
 export default function Contos() {
     const contos = [
@@ -43,9 +44,9 @@ export default function Contos() {
 
     return (
         <div className="container py-5 ">
-            <h2 className="fw-bold text-center my-4 mt-4 mb-5 text-success" style={{ fontSize: "3.5rem" }}>
+            <ContosTitle className=" my-4 mt-4 mb-5">
                 História  do Natal de Jesus
-            </h2>
+            </ContosTitle>
 
             <div className="row my-5">
                 {contos.map((conto, index) => (

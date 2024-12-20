@@ -54,4 +54,34 @@ export const StyledButton = styled.button`
         background-color: #198754;
         box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
      }
-`
+`;
+
+export const StyledTitle = styled.h1`
+  color: #28a745;
+  font-weight: bold;
+  font-size: 2.9rem;
+
+  @media (max-width: 425px) {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+`;
+
+// Estilizando a imagem do Papai Noel
+export const StyledImage = styled.img`
+  max-width: 450px;
+  width: 100%;
+  border-radius: 10px;
+  border: 3px solid #f44336;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+
+  @media (max-width: 768px) {
+    max-width: 350px; /* Reduz a largura máxima em telas menores */
+  }
+
+  @media (max-width: 425px) {
+    max-width: 250px; /* Reduz ainda mais a largura em telas muito pequenas */
+  }
+`;

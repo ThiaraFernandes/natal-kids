@@ -21,12 +21,45 @@ export const HighlightedName = styled.span`
             -2px 2px 0px #000, 
             2px 2px 0px #000;  
   animation: ${fadeIn} 1.5s ease-in-out;
+
+  @media (max-width: 768px) {
+    font-size: 2.5rem; 
+  }
+
+  @media (max-width: 576px) {
+    font-size: 2rem; 
+  }
 `;
 
 export const Title = styled.h1`
   font-size: 2.5rem;
   color: #2e8b57;
+
+  @media (max-width: 768px) {
+    font-size: 2.2rem; 
+  }
+
+  @media (max-width: 576px) {
+    font-size: 1.8rem; 
+  }
 `;
+
+export const Subtitle = styled.h3`
+  font-size: 3rem;
+  color: #2e8b57;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  margin-top: 2rem;
+
+  @media (max-width: 768px) {
+    font-size: 2.5rem; 
+  }
+
+  @media (max-width: 576px) {
+    font-size: 2rem; 
+  }
+`;
+
 
 // Container para o contador e os botões
 export const ContainerSection = styled.div`
@@ -95,5 +128,20 @@ export const ButtonClose = styled.button`
     width: 30px;
     height: 30px;
     font-size: 1rem;
+  }
+`;
+
+export const ContosTitle =styled.h1`
+  font-size: 3.5rem;
+  text-align: center;
+  font-weight: bold;
+  color: #28a745;
+
+  @media (max-width: 768px) {
+    font-size: 2.5rem; 
+  }
+
+  @media (max-width: 576px) {
+    font-size: 2rem; 
   }
 `;

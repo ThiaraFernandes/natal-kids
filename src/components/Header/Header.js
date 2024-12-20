@@ -2,7 +2,7 @@ import React, { useState, useRef } from "react";
 import { NavLink } from "react-router-dom";
 import natalMusic from "../../assets/audio/natal-instrumental.mp3";
 import { FaPlay, FaPause } from "react-icons/fa";
-import { CustomHeader } from "./Header.styled";
+import { CustomHeader, Title } from "./Header.styled";
 
 export default function Header() {
     // isPlaying com false para a música começar desligada
@@ -28,10 +28,10 @@ export default function Header() {
             <CustomHeader>
                 <header className="navbar navbar-expand-lg bg-danger shadow">
                     <div className="container-fluid">
-                        {/* Título */}
-                        <h1 className="navbar-brand mb-2 text-warning">
+                    
+                        <Title className="navbar-brand mb-2 text-warning">
                             Bem-vindo(a) à aldeia do Papai Noel!
-                        </h1>
+                        </Title>
 
                         {/* Botão Hamburger */}
                         <button
