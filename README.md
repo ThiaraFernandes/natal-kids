@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+# 🎄 Site Interativo de Natal para Crianças 🎅
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Bem-vindo ao projeto de Natal!**  
+Este site temático foi desenvolvido para proporcionar diversão e interatividade às crianças, trazendo o espírito natalino com:
+- Jogos educativos e criativos.
+- Histórias sobre o Natal de Jesus.
+- Ferramentas para personalização e diversão, como a criação de cartinhas para o Papai Noel.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🌟 Prints do Projeto
 
-### `npm start`
+### Página Inicial
+![Página Inicial](docs/home.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Jogos
+![Página Inicial](docs/jogos.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Cartinha para o Papai Noel
+![Página Inicial](docs/cartinha.png)
 
-### `npm test`
+### Design Responsivo
+![Design Responsivo](docs/responsivo.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🛠️ Funcionalidades do Projeto
+- **Tela Inicial Personalizada**: O site saúda a criança com o nome dela.
+- **Jogos Interativos**:
+  - Decoração de árvore de Natal.
+  - Jogo da memória.
+  - Quiz divertido com perguntas visuais.
+- **Histórias de Natal**: Conheça a história do nascimento de Jesus.
+- **Cartinha para o Papai Noel**: Escreva, edite e salve a cartinha em PDF.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## ⌨️ Tecnologias Utilizadas
+- **React**: Framework principal para o desenvolvimento.
+- **Bootstrap**: Para estilização e design responsivo.
+- **Styled Components**: Para personalizações de estilo.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 🔗 Acesse o Projeto Online
+O site está hospedado no Vercel:  
+[🎅 Clique aqui para acessar o projeto](https://thiarafernandes.github.io/natal-kids/)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📚 Aprendizados
+Este projeto foi uma oportunidade incrível para explorar e aplicar conceitos de:
+- **Desenvolvimento Responsivo**: Garantindo uma boa experiência em dispositivos móveis.
+- **Interatividade com React**: Implementando funcionalidades dinâmicas.
+- **Hospedagem no Vercel**: Tornando o projeto acessível online.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 📬 Contato
+Se você gostou deste projeto ou quer saber mais, entre em contato comigo:  
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/thiarafernandes-dev/)
